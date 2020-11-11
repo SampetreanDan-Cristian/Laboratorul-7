@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img{
+width: 200px;
+height: 200px;
+ opacity: 0.5;
+ border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+table, th, td{
+border: 1px solid black;
+}
+body {
+  background-color: lightblue;
+}
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+
+</style>
+<script>
+function veziviitorul() {
+document.body.style.backgroundColor="green";
+  document.getElementById("numeprofil").innerHTML = "ing. Sampetrean";
+  document.getElementById("poza").src = "poza2.jpg";
+  document.getElementById("poza").style.border = "9px";
+  document.getElementById("poza").style.opacity = "0.8";
+  var tabel=document.getElementById("tabel");
+  tabel.rows[0].cells[0].innerHTML="Universitatea tehnica";
+  tabel.rows[1].cells[0].innerHTML="Programare";
+  tabel.rows[2].cells[0].innerHTML="Electrotehnica";
+}
+function aratavarsta()
+{ 	var azi= new Date;
+	var varstamea;
+	
+	var anNasc= document.getElementById("varsta").innerHTML;
+	var ancurent=azi.getFullYear();
+	
+	varstamea= ancurent - parseInt(anNasc)
+	document.getElementById("varsta").innerHTML =varstamea;
+}
+
+</script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="catalog_styles.css">
+<a href="url">https://www.w3schools.com/w3css/4/w3.css</a>
+<h1 id="numeprofil">Sampetrean Dan-Cristian</h1>
+<img id="poza" src="dan.jpg">
+<button type="button" onclick="veziviitorul()">alta viata</button>
+<p>cdan6015@gmail.com</p>
+<p>0758xxxxxx</p>
+<p onmouseover="aratavarsta()" id="varsta">2001</p>
+<p>As dori sa stapanasec foarte bine un limbaj de programare si sa imi gasesc un job in IT</p>
+<html>
+<body>
+
+<h2>Disciplinele de interes</h2>
+
+<table id="tabel">
+  <tr>
+    <th>Disciplina</th>
+    <th>Anul in care se studiaza </th> 
+    <th>link</th>
+  </tr>
+  <tr>
+    <td>Informatică aplicată</td>
+    <td>1</td>
+    <td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf</td>
+  </tr>
+  <tr>
+    <td>Matematici speciale </td>
+    <td>2</td>
+    <td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3108.pdf</td>
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor - Algoritmi</td>
+    <td>2</td>
+    <td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3111.pdf</td>
+  </tr>
+</table>
+
+<h2>LISTA PASIUNILOR</h2>
+
+<ul>
+  <li>Vizionarea de filme/seriale</li>
+  <li>Sport</li>
+  <li>Pictura</li>
+</ul>  
+
+
+
+</body>
+</html>
